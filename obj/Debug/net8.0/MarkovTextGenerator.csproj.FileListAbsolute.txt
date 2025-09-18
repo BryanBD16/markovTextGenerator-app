@@ -1,0 +1,14 @@
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/bin/Debug/net8.0/MarkovTextGenerator
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/bin/Debug/net8.0/MarkovTextGenerator.deps.json
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/bin/Debug/net8.0/MarkovTextGenerator.runtimeconfig.json
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/bin/Debug/net8.0/MarkovTextGenerator.dll
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/bin/Debug/net8.0/MarkovTextGenerator.pdb
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.GeneratedMSBuildEditorConfig.editorconfig
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.AssemblyInfoInputs.cache
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.AssemblyInfo.cs
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.csproj.CoreCompileInputs.cache
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.dll
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/refint/MarkovTextGenerator.dll
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.pdb
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/MarkovTextGenerator.genruntimeconfig.cache
+/home/bryan-blais-dupuis/Bryan/Portfolio/MarkovTextGenerator/obj/Debug/net8.0/ref/MarkovTextGenerator.dll
