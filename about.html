@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
+    <title>about</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
@@ -40,8 +40,37 @@
         </nav>
     </header>
     <br>
-    <h1>Bienvenue sur mon projet JS</h1>
-    <p>Ce projet contient un générateur de texte basé sur une chaîne de Markov.</p>
+    <div class="row justify-content-around">
+    <div class="col-lg-8 col-12">
+    <h2>Qui est Markov ?</h2>
+    <p>
+        Andreï Andreïevitch Markov (1856-1922) était un mathématicien russe connu pour ses travaux en
+        théorie des probabilités. Il est surtout célèbre pour avoir introduit le concept de 
+        <strong>chaînes de Markov</strong>, un outil mathématique permettant de modéliser des systèmes
+        où l'état futur dépend uniquement de l'état présent, et non des états passés.
+    </p>
+
+    <h2>Le concept de chaîne de Markov</h2>
+    <p>
+        Une <strong>chaîne de Markov</strong> est un modèle mathématique pour décrire des processus
+        stochastiques (aléatoires) avec une mémoire limitée. Concrètement, cela signifie que
+        la probabilité de passer à un état futur dépend uniquement de l'état actuel.  
+        Par exemple, si l'on analyse le texte d'un livre mot par mot, une chaîne de Markov peut
+        déterminer quel mot est le plus probable après un mot donné.
+    </p>
+
+    <h2>Utilisation dans la génération de texte</h2>
+    <p>
+        Les chaînes de Markov sont utilisées pour générer du texte de manière probabiliste. 
+        On commence par analyser un corpus de texte et on construit un modèle indiquant, pour 
+        chaque mot (ou groupe de mots), quels sont les mots les plus susceptibles de suivre.  
+        Ensuite, pour générer du texte, on choisit un mot de départ et on sélectionne 
+        successivement les mots suivants en fonction des probabilités calculées.  
+        Le résultat est un texte qui peut sembler naturel et cohérent, tout en restant
+        basé sur les données du corpus initial.
+    </p>
+</div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
