@@ -4,11 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <h1>Bienvenue sur mon projet JS</h1>
-    <p>Ce projet contient un générateur de texte basé sur une chaîne de Markov.</p>
-    <button onclick="location.href='markovTextGenerator.html'">Aller au générateur</button>
+
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Accueil</a>
+
+            <!-- Bouton du menu burger en mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Liens du menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="markovTextGenerator.html">Générateur de text Markov</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">À propos</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <br>
+    <div class="text-center">
+    <h1>Intelligence artificielle</h1>
+    <p class="lead">Ce projet a pour but d'explorer le domaine de l'intelligence artificielle</p>
+    </div>
+    <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1>L'Évolution de l'Intelligence Artificielle</h1>
+        <p class="lead">De ses débuts symboliques à l'IA générative moderne, découvrez les étapes clés.</p>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Introduction</h2>
+            <p>
+              L'intelligence artificielle (IA) désigne des systèmes capables de simuler certaines formes d'intelligence humaine,
+              comme la résolution de problèmes, l'apprentissage ou le raisonnement. Son développement a débuté au milieu du 20e siècle
+              avec les premiers ordinateurs capables de calculs symboliques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Les débuts -->
+    <div class="row mb-4">
+      <div class="col-12 col-lg-6">
+        <div class="card border-primary shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Les débuts et premières approches</h2>
+            <p>
+              Dans les années 1950 et 1960, des chercheurs comme Alan Turing et John McCarthy ont posé les bases théoriques
+              de l'IA. Les premières tentatives reposaient sur des <strong>systèmes symboliques</strong>, utilisant des règles explicites
+              pour résoudre des problèmes. Cette approche est appelée <em>IA symbolique</em> ou <em>GOFAI</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Évolutions majeures -->
+      <div class="col-12 col-lg-6">
+        <div class="card border-success shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Évolutions majeures</h2>
+            <ul class="mb-0">
+              <li><strong>Années 1980 :</strong> réseaux de neurones et apprentissage supervisé.</li>
+              <li><strong>Années 1990 :</strong> algorithmes de machine learning et systèmes experts.</li>
+              <li><strong>Années 2000 :</strong> explosion des données (Big Data) et amélioration des performances matérielles.</li>
+              <li><strong>Années 2010 :</strong> deep learning, reconnaissance d'images et NLP.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Approches et genres -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="card border-warning shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Approches et genres d'IA</h2>
+            <ul class="mb-0">
+              <li><strong>IA faible :</strong> spécialisée dans une tâche unique (ex. traduction, détection).</li>
+              <li><strong>IA forte :</strong> théorique, raisonnement général comme un humain.</li>
+              <li><strong>IA symbolique :</strong> basée sur règles et logique.</li>
+              <li><strong>IA connexionniste :</strong> réseaux de neurones artificiels.</li>
+              <li><strong>IA générative :</strong> création de contenu (texte, images, code).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- État actuel et enjeux -->
+    <div class="row mb-4">
+      <div class="col-12 col-lg-6">
+        <div class="card border-danger shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">État actuel et enjeux</h2>
+            <ul>
+              <li>Compréhension limitée du raisonnement et du contexte global.</li>
+              <li>Besoins massifs en données et en puissance de calcul.</li>
+              <li>Problèmes éthiques et biais des algorithmes.</li>
+              <li>Difficulté à créer une IA générale.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="card border-info shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Perspectives proches</h2>
+            <ul>
+              <li>Amélioration des capacités de raisonnement et compréhension du langage.</li>
+              <li>Efficacité énergétique et rapidité des modèles.</li>
+              <li>Intégration fiable de l’IA dans des applications critiques.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Conclusion -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2>Conclusion</h2>
+            <p>
+              L'intelligence artificielle a parcouru un chemin considérable depuis ses débuts symboliques.
+              Les prochaines années devraient voir une évolution continue vers des systèmes plus intelligents,
+              flexibles et capables d’assister efficacement l’homme dans de nombreux domaines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
