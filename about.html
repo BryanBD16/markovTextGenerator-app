@@ -61,24 +61,66 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ajouter le deuxième élément ici
+                Classification de texte simple – Bag of Words
             </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAboutAI">
             <div class="accordion-body">
-                <!-- Mettre le contenu du deuxième élément ici -->
+               <h3>Idée générale</h3>
+            <p>
+                Cette application montre comment un ordinateur peut <strong>classer une phrase</strong> 
+                (par exemple positive ou négative) à partir de simples statistiques sur les mots qui la composent.
+                Le modèle se base sur un petit corpus d’exemples annotés et apprend quelles combinaisons
+                de mots sont typiques de chaque catégorie.
+            </p>
+
+            <h3>Concept clé : le <em>Bag of Words</em></h3>
+            <p>
+                Chaque phrase est convertie en un vecteur représentant la présence ou la fréquence des mots
+                d’un vocabulaire. Ce vecteur – qu’on appelle un <strong>bag of words</strong> – ignore l’ordre
+                des mots mais conserve leur importance statistique.
+            </p>
+
+            <h3>Classification probabiliste</h3>
+            <p>
+                À partir de ce vecteur, un algorithme simple (par exemple <strong>Naïve Bayes</strong>)
+                calcule la probabilité que la phrase appartienne à chaque catégorie et choisit la plus probable.
+                C’est une introduction pratique aux techniques de
+                <strong>classification supervisée</strong> utilisées en intelligence artificielle.
+            </p>
             </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ajouter le troisième élément ici
+                Réseau neuronal minimal – Prédiction de mots
             </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionAboutAI">
             <div class="accordion-body">
-                <!-- Mettre le contenu du troisième élément ici -->
+                <h3>Objectif</h3>
+            <p>
+                Ce projet va plus loin : il s’agit de construire un <strong>mini réseau de neurones</strong>
+                capable d’<strong>apprendre</strong> à prédire le mot suivant dans une phrase courte.
+                Contrairement à la chaîne de Markov, le modèle ne se contente plus de probabilités pré-calculées,
+                il ajuste des paramètres internes lors de l’entraînement.
+            </p>
+
+            <h3>Représentation des mots</h3>
+            <p>
+                Chaque mot est converti en un vecteur <em>one-hot</em>, c’est-à-dire une liste de zéros avec un
+                seul 1 indiquant la position du mot dans le vocabulaire.  
+                Ces vecteurs sont les « entrées » du réseau neuronal.
+            </p>
+
+            <h3>Apprentissage et rétropropagation</h3>
+            <p>
+                Le réseau comporte une ou deux couches simples. On lui présente des séquences de mots ;
+                il prédit le mot suivant, compare la prédiction au mot réel, puis ajuste ses poids grâce
+                à la <strong>rétropropagation</strong> pour réduire l’erreur.
+                Avec assez d’exemples, il devient capable de générer du texte plus fluide qu’un modèle de Markov.
+            </p>
             </div>
             </div>
         </div>

@@ -14,7 +14,7 @@ class MarkovChain {
     }
 
     train(text) {
-        const separators = /[\s\n\r\t.,;:!?"“”‘’'\-\*()—]+/;
+        const separators = /[\s\n\r\t.,;:!?"“”_\-\*()—«»]+/;
         const words = text.toLowerCase().split(separators).filter(w => w.length > 0);
 
         for (let i = 0; i < words.length - 1; i++) {
@@ -46,10 +46,26 @@ class MarkovChain {
 // Event listener pour le bouton
 document.getElementById("generateBtn").addEventListener("click", async () => {
     const wordCount = parseInt(document.getElementById("wordCount").value) || 30;
+    const maxWords = 1000;
+    const minWords = 1;
+
+    if (wordCount > maxWords) {
+        alert(`Le nombre maximum est ${maxWords}`);
+        return; // stoppe l'exécution
+    }
+
+    if (wordCount < minWords) {
+        alert(`Le nombre minimum est ${minWords}`);
+        return; // stoppe l'exécution
+    }
+
     const resultElement = document.getElementById("result");
 
+     // Récupérer la valeur sélectionnée dans le select
+    const selectedFile = document.getElementById("textChoice").value;
+
     // Charger le texte
-    const response = await fetch('assets/data/WarAndPeace.txt');
+    const response = await fetch(`assets/data/${selectedFile}`);
     const inputText = await response.text();
 
     // Générer le texte Markov
@@ -59,4 +75,5 @@ document.getElementById("generateBtn").addEventListener("click", async () => {
 
     resultElement.textContent = generatedText;
 });
+
 

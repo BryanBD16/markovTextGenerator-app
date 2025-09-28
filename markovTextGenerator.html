@@ -16,7 +16,17 @@
     <div class="col-md-8 text-center">
 
       <h1>Générateur de texte Markov</h1>
-      <p class="lead">Le générateur est entrainé avec le texte « Guerre et Paix », par Léon Tolstoï, publié en 1869</p>
+      <p class="lead">Le générateur peut être entrainé avec le texte « Guerre et Paix » par Léon Tolstoï, une partie de l'oeuvre d'Arthure Rimbaud ou encore par les «Histoires extraordinaires» d'Edgar Allan Poe</p>
+
+    <div class="mb-3">
+        <label for="textChoice" class="form-label">Choisir le texte :</label>
+        <select id="textChoice" class="form-select mx-auto" style="width: 50%; text-align: center;">
+            <option value="WarAndPeace.txt" selected>Guerre et Paix - Léon Tolstoï</option>
+            <option value="Rimbaud.txt">Oeuvres de Arthur Rimbaud</option>
+            <option value="Poe.txt">Histoires extraordinaires - Edgar Allan Poe</option>
+        </select>
+    </div>
+
 
       <div class="mb-3">
         <label for="wordCount" class="form-label">Nombre de mots à générer :</label>
