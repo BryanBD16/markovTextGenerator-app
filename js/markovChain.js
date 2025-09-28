@@ -15,7 +15,7 @@ class MarkovChain {
 
     train(text) {
         const separators = /[\s\n\r\t.,;:!?"“”‘’'\-\*()—]+/;
-        const words = text.split(separators).filter(w => w.length > 0);
+        const words = text.toLowerCase().split(separators).filter(w => w.length > 0);
 
         for (let i = 0; i < words.length - 1; i++) {
             const current = words[i];
@@ -59,3 +59,4 @@ document.getElementById("generateBtn").addEventListener("click", async () => {
 
     resultElement.textContent = generatedText;
 });
+
